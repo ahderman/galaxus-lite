@@ -1,7 +1,15 @@
 ## How to run
 
+### Running the server
+
 ```sh
 dotnet run --launch-profile https
+```
+
+### Running the database
+
+```sh
+docker-compose up
 ```
 
 ## Open API docs
@@ -39,3 +47,9 @@ curl -i -k https://localhost:7140/api/products/1
 ## Resources
 
 - https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio-code
+
+## Next up
+
+- Migrations + auto table creation on server start?
+- Tests
+- Run server in docker-compose

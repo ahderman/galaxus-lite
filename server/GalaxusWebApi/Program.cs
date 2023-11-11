@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-builder.Services.AddDbContext<GalaxusDbContext>(options => options.UseInMemoryDatabase("Galaxus"));
+builder.Services.AddDbContext<GalaxusDbContext>(optionsBuilder => optionsBuilder.UseNpgsql(@"Host=localhost:5432;Username=postgres;Password=pw;Database=postgres"));
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
