@@ -1,6 +1,12 @@
 ## How to run
 
+```sh
 dotnet run --launch-profile https
+```
+
+## Open API docs
+
+See the docs here: https://localhost:7140/swagger/index.html
 
 ## Test the API
 
@@ -33,15 +39,3 @@ curl -i -k https://localhost:7140/api/products/1
 ## Resources
 
 - https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio-code
-
-
-## Questions
-
-What does this do?
-
-`dotnet add package Microsoft.VisualStudio.Web.CodeGeneration.Design -v 7.0.0`
-
-## Process
-
-- Add model
-- Add controller
