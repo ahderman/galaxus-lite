@@ -44,12 +44,29 @@ curl -i -k https://localhost:7140/api/products
 curl -i -k https://localhost:7140/api/products/1
 ```
 
+## Create a DB mutation
+
+### Prerequisites
+
+```sh
+dotnet tool install dotnet-ef
+dotnet add package Microsoft.EntityFrameworkCore.Design
+```
+
+## Creating a new DB migration
+
+```sh
+dotnet ef migrations add Init
+dotnet ef database update
+```
+
 ## Resources
 
-- https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio-code
+- [Microsoft - Tutorial: Create a web API with ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/tutorials/first-web-api?view=aspnetcore-7.0&tabs=visual-studio-code)
+- [Microsoft - Getting Started with EF Core](https://learn.microsoft.com/en-us/ef/core/get-started/overview/first-app?tabs=netcore-cli)
+- [EntityFramework Tutorial](https://www.entityframeworktutorial.net)
 
 ## Next up
 
-- Migrations + auto table creation on server start?
 - Tests
 - Run server in docker-compose

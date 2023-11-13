@@ -4,7 +4,6 @@ services:
 
   db:
     image: postgres:15.2
-    restart: always
     environment:
       # POSTGRES_USER: postgres
       POSTGRES_PASSWORD: pw
